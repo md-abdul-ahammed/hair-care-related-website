@@ -1,0 +1,89 @@
+.default-p-color{
+color: #333399;
+}
+.default-s-color{
+color: #ff00cc;
+}
+.default-btn-regular{
+    border: none;
+    background-image: linear-gradient(to right,#ff00cc, #333399);
+}
+.carousel-caption {
+    right: 50%;
+    bottom: 6.25rem;
+}
+
+
+
+
+
+/* -----------------------------
+responsive part start from here
+-------------------------------- */
+
+@media only screen and (max-width: 350px) {
+    .carousel-caption {
+        right: 15%;
+    bottom: 1.25rem;
+    }
+    .res-m-0{
+        margin: 0;
+    }
+    .res-p-0{
+        padding: 0;
+    }
+    .res-fs-3{
+        font-size: 7px;
+    }
+    .carousel-indicators{
+        margin-bottom:0 ;
+    }
+    .res-fs-4{
+        font-size: 11px;
+    }
+}
+@media only screen and (min-width: 351px) and (max-width: 490px) {
+    .carousel-caption {
+        right: 15%;
+    bottom: 1.25rem;
+    }
+    .res-m-0{
+        margin: 0;
+    }
+    .res-p-0{
+        padding: 0;
+    }
+    .res-fs-3{
+        font-size: 10px;
+    }
+    .carousel-indicators{
+        margin-bottom:0 ;
+    }
+    .res-fs-4{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 491px) and (max-width: 650px) {
+    .carousel-caption {
+        right: 15%;
+    bottom: 1.25rem;
+    }
+    .res-fs-3{
+        font-size: 10px;
+    }
+    .carousel-indicators{
+        margin-bottom:0 ;
+    }
+    .res-fs-4{
+        font-size: 16px;
+    }
+    
+}
+@media only screen and (min-width: 651px) and (max-width: 991px) {
+    .carousel-caption {
+        right: 15%;
+    bottom: 1.25rem;
+    }
+    
+}

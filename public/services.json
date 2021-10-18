@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Hair Transplantation",
+        "short_description": "Hair transplantation is a surgical technique that removes hair follicles from one part of the body, called the 'donor site'",
+        "long_description": "Hair transplantation differs from skin grafting in that grafts contain almost all of the epidermis and dermis surrounding the hair follicle, and many tiny grafts are transplanted rather than a single strip of skin.Since hair naturally grows in groupings of 1 to 4 hairs, current techniques harvest and transplant hair 'follicular units' in their natural groupings.",
+        "price": 903,
+        "img": "https://i.ibb.co/nb1nbw0/service-1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Laser Hair Treatment",
+        "short_description": "Laser hair removal is the process of hair removal by means of exposure to pulses of laser light that destroy the hair follicle.",
+        "long_description": "It had been performed experimentally for about twenty years before becoming commercially available in 1995 and 1996.[1] One of the first published articles describing laser hair removal was authored by the group at Massachusetts General Hospital in 1998.[2][3] Laser hair removal is widely practiced in clinics, and even in homes using devices designed and priced for consumer self-treatment.",
+        "price": 940,
+        "img": "https://i.ibb.co/L5X12wz/ezgif-com-gif-maker.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Hair Restoration",
+        "short_description": "Hair transplants are typically more successful than over-the-counter hair restoration products",
+        "long_description": "“The current gold standard for hair transplants is called Follicular Unit Extraction,” says Washenik. “FUE is an advanced surgical hair restoration technique. It's less invasive than traditional hair transplants. This surgical solution leaves no linear scar and requires no stitches.",
+        "price": 919,
+        "img": "https://i.ibb.co/L0VhHQC/service-3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Beard & Eybrow Reconstruction",
+        "short_description": "Eyebrow restoration is a treatment used to restore the appearance of your eyebrows. Treatments can be used to completely",
+        "long_description": "Beard & Eyebrow transplants are designed to restore growing hair to eyebrows that are overly thin, scarred, or completely missing. The absence of hair can be due to genetics, prior electrolysis or laser hair removal, over-plucking, thyroid or other hormonal abnormalities, or trauma due to surgery, burns or other types of accidents.",
+        "price": 983,
+        "img": "https://i.ibb.co/tYqSXRc/service-2.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Hair Replacement",
+        "short_description": "Hair loss patterns also vary between men and women. Hair loss can affect a patient’s appearance and self-esteem.",
+        "long_description": "Hair Replacement are typically more successful than over-the-counter hair restoration products. But there are some factors to consider: Anywhere from 10 to 80 percent of transplanted hair will fully grow back in an estimated three to four months. Like regular hair, transplanted hair will thin over time.",
+        "price": 999,
+        "img": "https://i.ibb.co/FKDQqfQ/service-5-1.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Hair Micro Pigmentation",
+        "short_description": "This procedure is known as scalp micropigmentation (SMP), which creates the illusion of fuller hair.",
+        "long_description": "The goal of SMP isn’t to create hairlike lines as you would when microblading eyebrows, but instead to use tiny, layered dots in different hues of black to replicate the look of a shadow on your scalp. This style, referred to as pointillism, is done to create natural-looking depth and definition.",
+        "price": 870,
+        "img": "https://i.ibb.co/SwPRhfz/service-4.jpg"
+    }
+]

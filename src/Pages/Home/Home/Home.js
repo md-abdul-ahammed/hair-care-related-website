@@ -1,0 +1,18 @@
+import React from 'react';
+import AboutWork from '../../AboutWork/AboutWork';
+import Banner from '../Banner/Banner';
+import Footer from '../Footer/Footer';
+import Services from '../Services/Services';
+
+const Home = () => {
+    return (
+        <div>
+            <Banner></Banner>
+            <AboutWork></AboutWork>
+            <Services></Services>
+            <Footer></Footer>
+        </div>
+    );
+};
+
+export default Home;

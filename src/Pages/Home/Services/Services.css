@@ -1,0 +1,11 @@
+.default-bg-color{
+    background-color: #f9f9f7;
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .sm-align-start{
+        align-items: start !important;
+    }
+}
