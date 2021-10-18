@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import useServices from '../../../Hooks/useServices';
 import './Services.css'
 
@@ -34,7 +35,7 @@ const Services = () => {
                                                 {service.short_description}
                                             </Card.Text>
                                             <Card.Text>
-                                                <button className='btn default-btn-regular text-white res-fs-3'>Details</button>
+                                                <Link to={`service/${service.id}`} className='btn default-btn-regular text-white res-fs-3'>Details</Link>
                                             </Card.Text>
                                         </Card.Body>
                                     </Card>

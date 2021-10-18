@@ -8,6 +8,9 @@ color: #ff00cc;
     border: none;
     background-image: linear-gradient(to right,#ff00cc, #333399);
 }
+.default-btn-regular:hover{
+    background-image: linear-gradient(to right,#333399, #ff00cc);
+}
 .carousel-caption {
     right: 50%;
     bottom: 6.25rem;

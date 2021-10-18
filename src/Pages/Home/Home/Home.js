@@ -2,7 +2,6 @@ import React from 'react';
 import AboutWork from '../../AboutWork/AboutWork';
 import Banner from '../Banner/Banner';
 import Blog from '../Blog/Blog';
-import Footer from '../Footer/Footer';
 import Services from '../Services/Services';
 
 const Home = () => {

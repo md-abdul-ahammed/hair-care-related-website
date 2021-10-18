@@ -1,0 +1,8 @@
+@media only screen and (max-width: 991px) {
+    .res-mb-2{
+        margin-bottom: .75rem;
+    }
+    .res-align-center{
+        text-align: center;
+    }
+}
