@@ -1,0 +1,5 @@
+.bg-img{
+    background-image: url(../../Images/page-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

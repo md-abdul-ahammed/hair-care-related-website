@@ -18,7 +18,7 @@ const Service = () => {
         <div className='p-5'>
             <div className='row container mx-auto justify-content-between align-items-center pt-5'>
                 <div className="col-md-7">
-                    <h1 className='fw-bold'>
+                    <h1 className='fw-bold default-p-color'>
                         {serviceDetails?.name}
                     </h1>
                     <p className='text-muted'>

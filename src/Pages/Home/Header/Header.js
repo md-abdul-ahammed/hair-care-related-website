@@ -12,15 +12,20 @@ const Header = () => {
         <div>
             <Navbar collapseOnSelect fixed="top" expand="lg" bg="dark" variant="light" className='py-2'>
                 <Container>
-                    <Navbar.Brand as={Link} to="/home"><img src={logo} alt="" /></Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/"><img src={logo} alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto ">
                             <Nav.Link className='text-white res-align-center' as={Link} to="/home">Home</Nav.Link>
                             <Nav.Link className='text-white res-align-center' as={HashLink} to="/home#services">Services</Nav.Link>
                             <Nav.Link className='text-white res-align-center' as={HashLink} to="/home#blog">Blog</Nav.Link>
-                            <Nav.Link className='text-white res-align-center' as={Link} to="/checkout">Checkout</Nav.Link>
+                            <Nav.Link className='text-white res-align-center' as={Link} to="/gallery">Gallery</Nav.Link>
                             <Nav.Link className='text-white res-align-center' as={Link} to="/pricing">Pricing</Nav.Link>
+                            {
+                                user.email && <Navbar.Text className='text-warning ms-3 me-3'>
+                                    Signed in as: <a className='text-white text-decoration-none text-uppercase' href="#login"><span className='default-s-color fw-bold'>{user.displayName}</span></a>
+                                </Navbar.Text>
+                            }
                             {user.email
                                 ?
                                 <Nav.Link className='me-2 res-me-null text-white ms-2 px-4 simple-border fw-bold res-align-center' as={Link} onClick={logout} to="/login">Logout</Nav.Link>
@@ -28,11 +33,7 @@ const Header = () => {
                                 <Nav.Link className='me-2 res-me-null text-white ms-2 px-4 simple-border fw-bold res-mb-2 res-align-center' as={Link} to="/login">Login</Nav.Link>
                             }
                             {user.email ? '' : <Nav.Link as={Link} to='/register' className='default-btn-regular ms-2 res-align-center text-white px-4 rounded-pill' >Sign Up</Nav.Link>}
-                            {
-                                user.email && <Navbar.Text className='text-warning ms-3'>
-                                    Signed in as: <a className='text-white text-decoration-none text-uppercase' href="#login">{user.displayName}</a>
-                                </Navbar.Text>
-                            }
+
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

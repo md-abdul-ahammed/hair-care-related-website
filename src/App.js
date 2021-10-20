@@ -2,7 +2,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import './App.css';
 import AuthProvider from './contexts/AuthProvider';
-import Checkout from './Pages/Checkout/Checkout';
+import Gallery from './Pages/Gallery/Gallery';
 import Footer from './Pages/Home/Footer/Footer';
 import Header from './Pages/Home/Header/Header';
 import Home from './Pages/Home/Home/Home';
@@ -37,8 +37,8 @@ function App() {
           <PrivateRoute path='/service/:serviceId'>
             <Service></Service>
           </PrivateRoute>
-          <PrivateRoute path='/checkout'>
-            <Checkout></Checkout>
+          <PrivateRoute path='/gallery'>
+            <Gallery></Gallery>
           </PrivateRoute>
           <PrivateRoute path='/pricing'>
             <Pricing></Pricing>

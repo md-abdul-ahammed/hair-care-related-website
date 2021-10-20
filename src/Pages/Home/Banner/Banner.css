@@ -1,9 +1,12 @@
+/* Primary font color */
 .default-p-color{
 color: #333399;
 }
+/* Secondary font color */
 .default-s-color{
 color: #ff00cc;
 }
+/* Primary button design */
 .default-btn-regular{
     border: none;
     background-image: linear-gradient(to right,#ff00cc, #333399);
@@ -11,6 +14,7 @@ color: #ff00cc;
 .default-btn-regular:hover{
     background-image: linear-gradient(to right,#333399, #ff00cc);
 }
+/* bootstrap carousel control */
 .carousel-caption {
     right: 50%;
     bottom: 6.25rem;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Banner.css'
 
 const Banner = () => {
@@ -13,8 +14,8 @@ const Banner = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption className='text-black res-p-0'>
-                        <h3 className='res-m-0 res-fs-4'>First slide label</h3>
-                        <p className='res-m-0 res-fs-3'>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3 className='res-m-0 res-fs-4 fw-bold'>Control your hair loss before it’s too late</h3>
+                        <p className='res-m-0 res-fs-3 text-muted'>We can solve it - let us show you how.</p>
                         <button className='btn default-btn-regular text-white res-fs-3'>View Services</button>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -26,8 +27,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption className='text-black res-p-0'>
-                        <h3 className='res-m-0 res-fs-4'>Second slide label</h3>
-                        <p className='res-m-0 res-fs-3'>Lorem ipsum dolor sit amet.</p>
+                        <h3 className='res-m-0 res-fs-4 fw-bold'>Do you suffer hair loss?</h3>
+                        <p className='res-m-0 res-fs-3 text-muted'>Our clinic’s team provides many kinds of hair care treatments.</p>
                         <button className='btn default-btn-regular text-white res-fs-3'>Book Free Consultation</button>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -39,9 +40,9 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption className='res-p-0 text-black'>
-                        <h3 className='res-m-0 res-fs-4'>Third slide label</h3>
-                        <p className='res-m-0 res-fs-3'>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        <button className='btn default-btn-regular text-white res-fs-3'>View Before / After Gallery</button>
+                        <h3 className='res-m-0 res-fs-4 fw-bold'>Our Patient’s Results</h3>
+                        <p className='res-m-0 res-fs-3 text-muted'>“I tell you how much better I feel thanks to haircare. I feel younger”</p>
+                        <Link to='/gallery' className='btn default-btn-regular text-white res-fs-3'>View Before / After Gallery</Link>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

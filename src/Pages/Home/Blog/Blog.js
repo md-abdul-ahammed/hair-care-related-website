@@ -9,8 +9,8 @@ const Blog = () => {
             <div className='container mx-auto'>
                 <div className='d-flex flex-sm-row flex-column sm-align-start justify-content-between align-items-center px-4'>
                     <div>
-                        <h3>Haircare Latest News</h3>
-                        <p>Latest haircare news, photos, blogposts, videos, thoughts, stories & ideas.</p>
+                        <h3 className='fw-bold'>Haircare <span className='default-s-color'>Latest News</span></h3>
+                        <p className='text-muted'>Latest haircare news, photos, blogposts, videos, thoughts, stories & ideas.</p>
                     </div>
                     <div>
                         <button className='btn default-btn-regular text-white res-fs-3'>View All Blog Post</button>
@@ -24,16 +24,16 @@ const Blog = () => {
                         <Card>
                             <Card.Img variant="top" src='https://i.ibb.co/1TMkKp5/blog-post-1.jpg' />
                             <Card.Body>
-                                <Link to='/home' className='fs-5 text-decoration-none text-black'>
+                                <Link to='/home' className='fs-5 text-decoration-none text-black fw-bold'>
                                     What to Expect When Your Hair Transplant Done?
                                 </Link>
                                 <hr />
                                 <div className='d-flex justify-content-between align-items-center'>
                                     <div >
-                                        16 . DECEMBER . 2021
+                                        <small className='default-s-color'>16 . DECEMBER . 2021</small>
                                     </div>
                                     <div>
-                                        <AiFillMessage className='fs-5' /> 06
+                                        <small className='text-muted'><AiFillMessage className='fs-6 default-s-color' /> 06</small>
                                     </div>
                                 </div>
                             </Card.Body>
@@ -44,14 +44,14 @@ const Blog = () => {
                         <Card>
                             <Card.Img variant="top" src='https://i.ibb.co/kHXxZYc/blog-post-2.jpg' />
                             <Card.Body>
-                                <Link to='/home' className='fs-5 text-decoration-none text-black'>Scared of Surgery? Try Non Surgical Hair Loss Treatments</Link>
+                                <Link to='/home' className='fs-5 text-decoration-none text-black fw-bold'>Scared of Surgery? Try Non Surgical Hair Loss Treatments</Link>
                                 <hr />
                                 <div className='d-flex justify-content-between align-items-center'>
                                     <div >
-                                        15 . DECEMBER . 2021
+                                        <small className='default-s-color'>15 . DECEMBER . 2021</small>
                                     </div>
                                     <div>
-                                        <AiFillMessage className='fs-5' /> 05
+                                        <small className='text-muted'><AiFillMessage className='fs-6 default-s-color' /> 05</small>
                                     </div>
                                 </div>
                             </Card.Body>
@@ -62,14 +62,14 @@ const Blog = () => {
                         <Card>
                             <Card.Img variant="top" src='https://i.ibb.co/K98ZwFY/blog-post-3.jpg' />
                             <Card.Body>
-                                <Link to='/home' className='fs-5 text-decoration-none text-black'>The Hair Transplant Patient Journey</Link>
+                                <Link to='/home' className='fs-5 text-decoration-none text-black fw-bold'>The Hair Transplant Patient Journey</Link>
                                 <hr />
                                 <div className='d-flex justify-content-between align-items-center'>
                                     <div >
-                                        14 . DECEMBER . 2021
+                                        <small className='default-s-color'>14 . DECEMBER . 2021</small>
                                     </div>
                                     <div>
-                                        <AiFillMessage className='fs-5' /> 07
+                                        <small className='text-muted'><AiFillMessage className='fs-6 default-s-color' /> 07</small>
                                     </div>
                                 </div>
                             </Card.Body>

@@ -17,12 +17,7 @@ const useFirebase = () => {
 
     const signInUsingGoogle = () => {
         setIsLoading(true)
-        signInWithPopup(auth, googleProvider)
-            .then((result) => {
-                setUser(result.user)
-            }).catch((error) => {
-
-            })
+        return signInWithPopup(auth, googleProvider)
             .finally(() => setIsLoading(false))
     }
 
@@ -49,6 +44,9 @@ const useFirebase = () => {
                 console.log(result.user)
                 setError('')
                 setUserName()
+
+
+
             })
             .catch((error) => {
                 const errorMessage = error.message;
@@ -77,7 +75,7 @@ const useFirebase = () => {
             })
             .catch((error) => {
                 const errorMessage = error.message;
-                setError(errorMessage)
+
                 // ..
             });
     }
@@ -112,6 +110,7 @@ const useFirebase = () => {
 
     return {
         user,
+        setUser,
         signInUsingGoogle,
         logout,
         isLoading,
@@ -120,7 +119,8 @@ const useFirebase = () => {
         handlePasswordChange,
         handleLogin,
         handleNameChange,
-        error
+        error,
+        name
     }
 };
 
