@@ -22,7 +22,7 @@ const Header = () => {
                             <Nav.Link className='text-white res-align-center' as={Link} to="/gallery">Gallery</Nav.Link>
                             <Nav.Link className='text-white res-align-center' as={Link} to="/pricing">Pricing</Nav.Link>
                             {
-                                user.email && <Navbar.Text className='text-warning ms-3 me-3'>
+                                user.email && <Navbar.Text className='text-warning ms-3 me-3 res-align-center'>
                                     Signed in as: <a className='text-white text-decoration-none text-uppercase' href="#login"><span className='default-s-color fw-bold'>{user.displayName}</span></a>
                                 </Navbar.Text>
                             }

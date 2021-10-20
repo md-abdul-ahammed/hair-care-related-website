@@ -1,3 +1,9 @@
+/* navbar toogle color design */
+.navbar-light .navbar-toggler {
+    color: white;
+    border-color: white;
+}
+
 /* custom responsive add */
 @media only screen and (max-width: 991px) {
     .res-mb-2{
