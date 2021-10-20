@@ -4,8 +4,8 @@ import logo from '../../../Images/footer-logo.png'
 
 const Footer = () => {
     return (
-        <div className='bg-dark px-3 py-5'>
-            <div className='row container-fluid g-5 mx-auto text-white justify-content-between'>
+        <div className='bg-dark px-3 pt-5'>
+            <div className='row container-fluid g-5 mx-auto text-white justify-content-between pb-5'>
                 <div className='col-md-3'>
                     <img src={logo} alt="" />
                     <hr />
@@ -37,6 +37,8 @@ const Footer = () => {
                     <button className='btn default-btn-regular text-white res-fs-3 mt-3'>Subscribe</button>
                 </div>
             </div>
+
+            <p className='text-center text-white mb-0 pb-1'>© 2020-2021 <span className='default-s-color'>Abdul Ahammed</span> All Rights Reserved</p>
         </div>
     );
 };
