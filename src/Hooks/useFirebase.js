@@ -74,9 +74,7 @@ const useFirebase = () => {
                 setError('')
             })
             .catch((error) => {
-                const errorMessage = error.message;
-
-                // ..
+                setError('Invalid Email or Password')
             });
     }
 

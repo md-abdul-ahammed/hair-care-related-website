@@ -6,8 +6,7 @@ import useAuth from '../../../Hooks/useAuth';
 import logo from '../../../Images/logo.png'
 
 const Login = () => {
-    const { setUser } = useAuth();
-    const { signInUsingGoogle, handleLogin, handleEmailChange, handlePasswordChange, error } = useAuth();
+    const { signInUsingGoogle, setUser, handleLogin, handleEmailChange, handlePasswordChange, error } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home'
@@ -28,7 +27,7 @@ const Login = () => {
                 <input onBlur={handleEmailChange} className='simple-border focus-input primary-input py-3 px-4 d-block mb-3' required placeholder='Email' type="email" />
                 <input onBlur={handlePasswordChange} className='simple-border focus-input primary-input py-3 px-4 d-block mb-3' required placeholder='Password' type="password" />
                 <input type='submit' value='Login' className='primary-input py-3 px-3 d-block mb-3 default-btn-regular rounded-pill text-white' />
-                <p className='text-danger'>{error}</p>
+                <p className='text-danger ms-3'>{error}</p>
                 <p>Are you New Member? Please, <Link className='fw-bold default-text-color' to='/register'>Create an account</Link></p>
             </form>
             <div>
