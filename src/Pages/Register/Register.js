@@ -5,16 +5,16 @@ import useAuth from '../../Hooks/useAuth';
 import logo from '../../Images/logo.png'
 
 const Register = () => {
-    const { signInUsingGoogle } = useAuth();
+    const { signInUsingGoogle, handleRegistration, handleEmailChange, handlePasswordChange, error, handleNameChange } = useAuth();
     return (
         <div className='d-flex justify-content-around res-flex-column container align-items-center mt-5'>
-            <form className='mt-5 mb-4'>
+            <form className='mt-5 mb-4' onSubmit={handleRegistration}>
                 <img className='logo2-fluid mb-3' src={logo} alt="" />
-                <input className='simple-border focus-input primary-input py-3 px-4 d-block mb-3' placeholder='Name' type="text" />
-                <input className='simple-border focus-input primary-input py-3 px-4 d-block mb-3' placeholder='Email' type="email" />
-                <input className='simple-border focus-input primary-input py-3 px-4 d-block mb-3' placeholder='Password' type="password" />
-                <input className='simple-border focus-input primary-input py-3 px-4 d-block mb-3' placeholder='Confirm Password' type="password" />
-                <button className='primary-input py-3 px-3 d-block mb-3 default-btn-regular rounded-pill text-white'>Sign Up</button>
+                <input onBlur={handleNameChange} className='simple-border focus-input primary-input py-3 px-4 d-block mb-3' placeholder='Name' type="text" />
+                <input onBlur={handleEmailChange} required className='simple-border focus-input primary-input py-3 px-4 d-block mb-3' placeholder='Email' type="email" />
+                <input required onBlur={handlePasswordChange} className='simple-border focus-input primary-input py-3 px-4 d-block mb-3' placeholder='Password' type="password" />
+                <input type='submit' value='Sign Up' className='primary-input py-3 px-3 d-block mb-3 default-btn-regular rounded-pill text-white' />
+                <p className='text-danger'>{error}</p>
                 <p className='text-center'>Already Registered? <Link className='fw-bold default-text-color' to='/login'>Login here</Link></p>
             </form>
             <div>

@@ -6,14 +6,15 @@ import useAuth from '../../../Hooks/useAuth';
 import logo from '../../../Images/logo.png'
 
 const Login = () => {
-    const { signInUsingGoogle } = useAuth();
+    const { signInUsingGoogle, handleLogin, handleEmailChange, handlePasswordChange, error } = useAuth();
     return (
         <div className='d-flex justify-content-around res-flex-column container align-items-center pt-5'>
-            <form className='mt-5 mb-3'>
+            <form className='mt-5 mb-3' onSubmit={handleLogin}>
                 <img className='logo2-fluid mb-3' src={logo} alt="" />
-                <input className='simple-border focus-input primary-input py-3 px-4 d-block mb-3' placeholder='Email' type="email" />
-                <input className='simple-border focus-input primary-input py-3 px-4 d-block mb-3' placeholder='Password' type="password" />
-                <button className='primary-input py-3 px-3 d-block mb-3 default-btn-regular rounded-pill text-white'>Log In</button>
+                <input onBlur={handleEmailChange} className='simple-border focus-input primary-input py-3 px-4 d-block mb-3' required placeholder='Email' type="email" />
+                <input onBlur={handlePasswordChange} className='simple-border focus-input primary-input py-3 px-4 d-block mb-3' required placeholder='Password' type="password" />
+                <input type='submit' value='Login' className='primary-input py-3 px-3 d-block mb-3 default-btn-regular rounded-pill text-white' />
+                <p className='danger'>{error}</p>
                 <p>Are you New Member? Please, <Link className='fw-bold default-text-color' to='/register'>Create an account</Link></p>
             </form>
             <div>
